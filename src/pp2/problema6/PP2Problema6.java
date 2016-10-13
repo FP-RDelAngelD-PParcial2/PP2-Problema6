@@ -27,5 +27,9 @@ public class PP2Problema6 {
     public static double calcularSueldo(){
     double hora = solicitarDatos("horas trabajadas ");
     double pagaxhora = solicitarDatos("paga por hora ");
+    
+    for (int i=0; i>40 && i<48; i++){    
+        
+    }
     }
 }
