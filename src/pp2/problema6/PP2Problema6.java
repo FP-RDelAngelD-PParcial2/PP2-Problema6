@@ -30,10 +30,10 @@ public class PP2Problema6 {
     double total = 0;
      if (hora<=40){
          total=hora*pagaxhora;
-     }if(hora>40 || hora==48){
+     }if(hora>40 && hora<=48){
             total=(40*pagaxhora)+(hora-40)*(2*pagaxhora);
      }if(hora>48){
-                total=(40*pagaxhora)+8*(2*pagaxhora)+(hora-48)*(3*pagaxhora);
+                total=(40*pagaxhora)+(8*(2*pagaxhora))+((hora-48)*(3*pagaxhora));
             }
      return total;
     }
