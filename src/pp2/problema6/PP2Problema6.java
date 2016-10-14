@@ -25,15 +25,21 @@ public class PP2Problema6 {
         return miDato;
     }
     public static double calcularSueldo(){
-    double hora = solicitarDatos("horas trabajadas ");
-    double pagaxhora = solicitarDatos("paga por hora ");
-    double total = 0;
-     if (hora<=40){
-         total=hora*pagaxhora;
-     }if(hora>40 && hora<=48){
-            total=(40*pagaxhora)+(hora-40)*(2*pagaxhora);
+    double hora = solicitarDatos("horas trabajadas "); //Se solicitan las horas trabajadas
+    double pagaxhora = solicitarDatos("paga por hora "); //Se solicita la paga por hora
+    double total = 0; //Inicializa la variable
+     if (hora<=40){ //Si las horas son menores o iguales a 40
+         total=hora*pagaxhora; //Se multiplicara la hora por la paga por hora
+     }if(hora>40 && hora<=48){ //Si las horas son mayores a 40 y las horas son menores o iguales a 48
+            total=(40*pagaxhora)+(hora-40)*(2*pagaxhora); //Se multiplica 40 por la paga por hora y se suma la multiplicacion de la resta de
+                                                          //las horas menos 40 para obtener las horas que seran multiplicadas
+                                                          //por el doble de la paga por hora
      }if(hora>48){
-                total=(40*pagaxhora)+(8*(2*pagaxhora))+((hora-48)*(3*pagaxhora));
+                total=(40*pagaxhora)+(8*(2*pagaxhora))+((hora-48)*(3*pagaxhora));//Se multiplica 40 por la paga por hora y se suma la multiplicacion de
+                                                                                 //8 horas por el doble de la paga por hora y se suma
+                                                                                 //la multiplicacion de la resta de las horas menos 40
+                                                                                 //para obtener las horas que seran multiplicadas 
+                                                                                 //por el triple de la paga por hora
             }
      return total;
     }
