@@ -27,14 +27,13 @@ public class PP2Problema6 {
     public static double calcularSueldo(){
     double hora = solicitarDatos("horas trabajadas ");
     double pagaxhora = solicitarDatos("paga por hora ");
-    double total;
-    total = 0;
+    double total = 0;
      if (hora<=40){
          total=hora*pagaxhora;
      }if(hora>40 || hora==48){
-            total=((40*pagaxhora)+(hora-40)*(2*pagaxhora));
+            total=(40*pagaxhora)+(hora-40)*(2*pagaxhora);
      }if(hora>48){
-                total=((40*pagaxhora)+8*(2*pagaxhora)+(hora-48)*(3*pagaxhora));
+                total=(40*pagaxhora)+8*(2*pagaxhora)+(hora-48)*(3*pagaxhora);
             }
      return total;
     }
