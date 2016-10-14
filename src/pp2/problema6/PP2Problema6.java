@@ -15,7 +15,7 @@ public class PP2Problema6 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        muestraSueldo(calcularSueldo());
     }
     public static double solicitarDatos(String d){ //Solicita datos
         double miDato;
@@ -27,9 +27,19 @@ public class PP2Problema6 {
     public static double calcularSueldo(){
     double hora = solicitarDatos("horas trabajadas ");
     double pagaxhora = solicitarDatos("paga por hora ");
-    
-    for (int i=0; i>40 && i<48; i++){    
-        
+    double total = 0;
+     if (hora <=40){
+         total=hora*pagaxhora;
+     }
+        if(hora>=48){
+            total=((hora-40)*(2*pagaxhora)+(40*pagaxhora));
+        }
+            if(hora>48){
+                total=((hora-40)*(2*pagaxhora)+(hora-48)*(3*pagaxhora)+(40*pagaxhora));
+            }
+     return total;
     }
+    public static void muestraSueldo(double a){
+        System.out.print("El sueldo es " + a);
     }
 }
