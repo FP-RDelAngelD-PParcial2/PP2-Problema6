@@ -1,0 +1,14 @@
+run:
+Introduce el dato horas trabajadas 35
+Introduce el dato paga por hora 123
+El sueldo es 4305.0BUILD SUCCESSFUL (total time: 5 seconds)
+
+run:
+Introduce el dato horas trabajadas 46
+Introduce el dato paga por hora 123
+El sueldo es 6396.0BUILD SUCCESSFUL (total time: 8 seconds)
+
+run:
+Introduce el dato horas trabajadas 50
+Introduce el dato paga por hora 123
+El sueldo es 7626.0BUILD SUCCESSFUL (total time: 2 seconds)
